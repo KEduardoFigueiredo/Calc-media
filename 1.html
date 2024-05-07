@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var b1=Number(prompt("Digite a sua nota final do 1 bimestre:"))
+     var b2=Number(prompt("Digite a sua nota final do 2 bimestre:"))
+     var b3=Number(prompt("Digite a sua nota final do 3 bimestre:"))
+     var b4=Number(prompt("Digite a sua nota final do 4 bimestre:"))
+     var mediamaior=Math.max(b1,b2,b3,b4)
+     var mediafinal=(b1+b2+b3+b4) / 4
+
+     //Aprovado 
+
+
+     if(mediamaior===b1 && mediafinal>=6){
+        document.write(`Sua média final é: ${mediafinal}<br>Parabéns você foi aprovado!<br>E sua maior nota foi: ${mediamaior} no 1 bimestre `)
+     }
+     else if(mediamaior===b2 && mediafinal>=6 ){
+        document.write(`Sua média final é: ${mediafinal}<br>Parabéns você foi aprovado!<br>E sua maior nota foi: ${mediamaior} no 2 bimestre `)
+     }
+     else if(mediamaior===b3 && mediafinal>=6){
+        document.write(`Sua média final é: ${mediafinal}<br>Parabéns você foi aprovado!<br>E sua maior nota foi: ${mediamaior} no 3 bimestre `)
+     }
+     else if(mediamaior===b4 && mediafinal>=6){
+        document.write(`Sua média final é: ${mediafinal}<br>Parabéns você foi aprovado!<br>E sua maior nota foi: ${mediamaior} no 4 bimestre `)
+     }
+
+     // Reprovado 
+
+
+     else if(mediamaior===b4 && mediafinal<6){
+        document.write(`Sua média final é: ${mediafinal}<br>Você foi reprovado!<br>E sua maior nota foi: ${mediamaior} no 4 bimestre `)
+     }
+     else if(mediamaior===b3 && mediafinal<6){
+        document.write(`Sua média final é: ${mediafinal}<br>Você foi reprovado!<br>E sua maior nota foi: ${mediamaior} no 3 bimestre `)
+     }
+     else if(mediamaior===b2 && mediafinal<6){
+        document.write(`Sua média final é: ${mediafinal}<br>Você foi reprovado!<br>E sua maior nota foi: ${mediamaior} no 2 bimestre `)
+     }
+     else{
+        document.write(`Sua média final é: ${mediafinal}<br>Você foi reprovado!<br>E sua maior nota foi:  ${mediamaior} no 1 bimestre `)
+     }
+     
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
